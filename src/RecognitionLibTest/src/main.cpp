@@ -27,9 +27,9 @@ void run_cpp_recongition(const std::string& classifier_path, const std::string& 
 			{
 				std::cout << "recognized!" << std::endl;
 			}
-			for (int i = 0; i < res.result_per_classifier().size(); i++)
+			for (int i = 0; i < res.result_per_classifier(0).areas().size(); i++)
 			{
-				auto cur_area = res.result_per_classifier()[0].areas()[i];
+				auto cur_area = res.result_per_classifier(0).areas(i);
 				std::cout << "veracity: " << cur_area.veracity() <<
 					", wnd_count: " << cur_area.merged_window_count() <<
 					", area: [" << cur_area.rect_x() << ", " << cur_area.rect_y() << "; " << cur_area.rect_width() << ", " << cur_area.rect_height() << "]" << std::endl;

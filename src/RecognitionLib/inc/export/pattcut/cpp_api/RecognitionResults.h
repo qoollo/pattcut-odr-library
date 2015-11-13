@@ -212,6 +212,8 @@ namespace PattCutLib
 
 		/** Vector with all detected areas by this classifier */
 		const std::vector<CapturedArea>& areas() const { return *_areas; }
+		/** Returns information about particular area */
+		const CapturedArea& areas(int index) const { return _areas->at(index); }
 
 	private:
 		int _classifier_id;
@@ -313,6 +315,8 @@ namespace PattCutLib
 		int total_time_ms() const { return _total_time_ms; }
 		/** Vector with results from every used object classifier */
 		const std::vector<ResultPerClassifier>& result_per_classifier() const { return *_result_per_classifier; }
+		/** Returns result for particular classifier */
+		const ResultPerClassifier& result_per_classifier(int index) const { return _result_per_classifier->at(index); }
 
 	private:
 		int _total_time_ms;

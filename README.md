@@ -1,4 +1,4 @@
-# PattCut Object Detection and Recognition library (http://pattcut.com/)
+## PattCut Object Detection and Recognition library (http://pattcut.com/)
 
 **Main features:**
 

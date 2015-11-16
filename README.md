@@ -12,6 +12,7 @@
 **Usage example:**
 
 ```C++
+PattCutLib::RecognitionController controller;
 auto classifier_id = controller.load_classifier_from_file("classifier.xml");
 auto res = controller.perform_recognition("image.jpg");
 for (int i = 0; i < res.result_per_classifier(0).areas().size(); i++)

@@ -1,5 +1,6 @@
 #include "inc/haar_features/EvaluateRactangleCompact.h"
 #include <math.h>
+#include <limits>
 
 EvaluateRactangleCompact::EvaluateRactangleCompact()
 {

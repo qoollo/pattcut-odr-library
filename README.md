@@ -9,6 +9,12 @@
 * Support JPEG, PNG and BMP image formats
 
 
+**Results:**
+
+![Face](https://github.com/qoollo/pattcut-odr-library/blob/master/img/friends_proc.png)
+![Audi](https://github.com/qoollo/pattcut-odr-library/blob/master/img/Audi80_proc.png)
+
+
 **Usage example:**
 
 ```C++

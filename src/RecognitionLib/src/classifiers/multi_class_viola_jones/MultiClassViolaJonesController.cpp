@@ -121,9 +121,9 @@ double MultiClassViolaJonesController::evaluate_max_comb_value(const ViolaJonesC
 			const StumpClassifier& stump_cls = boosted_cls.get_classifier_at(j);
 
 			if (stump_cls.get_result_on_greater().tag() == boosted_cls.get_correct_tag())
-				cur_aggr += abs(stump_cls.get_result_on_greater().confidence());
+				cur_aggr += fabs(stump_cls.get_result_on_greater().confidence());
 			else
-				cur_aggr += abs(stump_cls.get_result_on_less().confidence());
+				cur_aggr += fabs(stump_cls.get_result_on_less().confidence());
 			cur_weak_cnt++;
 		}
 
